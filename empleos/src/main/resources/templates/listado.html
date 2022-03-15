@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Listado Ofertas de Trabajo</title>
+</head>
+<body>
+	<h1>Vacantes Disponibles</h1>
+	<ul th:each="empleo: ${empleos}">
+		<li>[[${empleo}]]</li>
+	</ul>
+</body>
+</html>
